@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Acerte o número...</title>
+</head>
+<body>
+    
+    <form action="teste1.php" method="post" onsubmit="enviaParaPHP(); return false;">
+        <h2>Acerte um número de 0 a 10</h2>
+        <input type="number" name="numberUser" id="numberUser" placeholder="Digite um número de 0 á 10" max="10" oninput="limitInput()">
+        <!-- oninput = toda vez que o valor do input for alterado pelo usuario é chamada a função especificada -->
+        <input type="submit" id="submit">
+        <p id="result"></p>
+    </form>
+
+</body>
+</html>
